@@ -1,0 +1,10 @@
+.technical__table {
+    width:100%;
+}
+.technical__table tbody {
+    width: 100%;
+}
+
+.technical__table tbody tr {
+    width: 33.3%;
+}

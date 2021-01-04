@@ -1,0 +1,45 @@
+.header {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.header__title {
+    text-align: center;
+    margin: 5px;
+}
+
+.header__photo {
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #666666;
+}
+
+.header__name {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+.header__occupation {
+    font-size: 1.5em;
+}
+
+
+.header__btn {
+    background-color: #666666;
+    border: none;
+    color: white;
+    padding: 8px;
+    width: 150px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.header__email {
+    margin-bottom: 5px;
+    color: #891329;
+}
+
+
+.header__phone {
+
+}
