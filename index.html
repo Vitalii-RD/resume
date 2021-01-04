@@ -4,89 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/body.css">
-
+    <link rel="stylesheet" href="./styles/main.css">
+    
     <title>Vitalii Dudnyk | Resume</title>
 </head>
 
-<body >
+<body>
     <header class="header container">
         <h1 class="header__title">Resume</h1>
         
-        <div class="header__person-info">
-            <img src="./imgs/pickachu.jpg" alt="" class="header__photo">
-            <p class="header__name">Vitalii Dudnyk</p>
-            <p class="header__occupation">Fullstack developer</p>
-        </div>
+        <nav>
+            <ul class="header-list">
+                <li class="header-list__item"><a href="#Profile">About</a></li>
+                <li class="header-list__item"><a href="#Skills">My skills</a></li>
+                <li class="header-list__item"><a href="#Technical">Technical</a></li>
+                <li class="header-list__item"><a href="#Experience">Experience</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header_row clearfix">
 
-        <div class="header__contact-info">
-            <button class="header__btn">Download PDF</button>
-            <p><a href="#" class="header__email">vitaliidu@gmail.com</a></p>
-            <p class="header__phone">+380 63 195 0829</p>
+            <div class="header__person-info">
+                <img src="./imgs/pickachu.jpg" alt="" class="header__photo">
+                <p class="header__name">Vitalii Dudnyk</p>
+                <p class="header__occupation">Fullstack developer</p>
+            </div>
+    
+            <div class="header__contact-info">
+                <button class="header__btn">Download PDF</button>
+                <p><a href="#" class="header__email">vitaliidu@gmail.com</a></p>
+                <p class="header__phone">+380 63 195 0829</p>
+            </div>
         </div>
     </header>
     
-    <main class="container">
+    <main class="container resume">
 
-        <section class="container__section">
-            <h2>Profile</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus adipisci quibusdam debitis. 
-                Cumque officiis neque possimus, et accusamus aliquid atque vero praesentium provident dolorum 
-                blanditiis nam ullam, obcaecati, maxime necessitatibus.
-            </p>
+        <section class="resume__section clearfix" id="Profile">
+            <h2 class="section__name">Profile</h2>
+            <div class="section__data">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus adipisci quibusdam debitis. 
+                    Cumque officiis neque possimus, et accusamus aliquid atque vero praesentium provident dolorum 
+                    blanditiis nam ullam, obcaecati, maxime necessitatibus.
+                </p>
+            </div>
         </section>
 
-        <section class="container__section">
-            <h2>Skills</h2>
-            <ul>
-                <li>
-                    <p>Web design</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                </li>
+        <section class="resume__section clearfix" id="Skills">
+            <h2 class="section__name">Skills</h2>
+            <div class="section__data clearfix">
 
-                <li>
-                    <p>Communication skills</p>
-                    <p>Fugit id maxime itaque voluptatum vitae cum natus, obcaecati saepe nam assumenda.</p>
-                </li>
+                <div class="skill-card">
+                    <p class="skill-card__title">Web design</p>
+                    <p class="skill-card__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>    
+                </div>
 
-                <li>
-                    <p>Patience</p>
-                    <p>Nostrum impedit cupiditate amet perspiciatis illo beatae neque.</p>
-                </li>
-            </ul>
+                <div class="skill-card">
+                    <p class="skill-card__title">Communication skills</p>
+                    <p class="skill-card__description">Fugit id maxime itaque voluptatum vitae cum natus, obcaecati saepe nam assumenda.</p>
+                </div>
+
+                <div class="skill-card">
+                    <p class="skill-card__title">Patience</p>
+                    <p class="skill-card__description">Nostrum impedit cupiditate amet perspiciatis illo beatae neque.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="resume__section clearfix" id="Technical">
+            <h2 class="section__name">Technical</h2>
+            <div class="section__data">
+                <table class="technical__table">
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>CSS</td>
+                            <td>JS</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>Python</td>
+                            <td>C#</td>
+                        </tr>
+                        <tr>
+                            <td>Git</td>
+                            <td>Linux</td>
+                            <td>Windows 10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <section class="container__section">
-            <h2>Technical</h2>
-            <table class="technical__table">
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>CSS</td>
-                        <td>JS</td>
-                    </tr>
-                    <tr>
-                        <td>Java</td>
-                        <td>Python</td>
-                        <td>C#</td>
-                    </tr>
-                    <tr>
-                        <td>Git</td>
-                        <td>Linux</td>
-                        <td>Windows 10</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <section class="resume__section clearfix" id="Experience">
+            <h2 class="section__name">Experience</h2>
+            <div class="section__data experience">
 
-        <section>
-            <h2>Experience</h2>
-            <p>No experience</p>
+                <p class="experience__company">Interlink <span class="experience__years">2020-2021</span></p>
+                <p class="experience__position">Intern</p>
+                <p class="experience__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Quis, expedita tenetur quas eligendi illo officia impedit laudantium ipsam voluptatibus.
+                </p>
+            </div>
         </section>
 
     </main>

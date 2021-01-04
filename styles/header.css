@@ -1,26 +1,70 @@
 .header {
-    margin-bottom: 15px;
     padding: 10px;
 }
 
 .header__title {
     text-align: center;
-    margin: 5px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.header-list {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.header-list__item {
+    transition: color 0.3s;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.header-list__item:hover a{
+    color: #891329;
+}
+
+.header-list__item a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.header_row {
+}
+
+.header__person-info {
+    float: left;
+    width: 60%;
+}
+
+.header__contact-info {
+    float: right;
+    width: 40%;
+}
+
 
 .header__photo {
     height: 100px;
     border-radius: 50%;
     border: 2px solid #666666;
+    float: left;
+    margin-right: 5px;
 }
 
 .header__name {
-    font-size: 2.5em;
+    font-size: 3rem;
     letter-spacing: 2px;
 }
 
 .header__occupation {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 
@@ -32,6 +76,8 @@
     width: 150px;
     text-align: left;
     margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .header__email {
