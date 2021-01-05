@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-around;
     background-color: slategray;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .burger-menu {
@@ -55,17 +59,18 @@
 
 .header__info {
     display: flex;
+    align-items: center;
 }
 
 .header__photo {
-    height: 100px;
+    height: 80px;
     border-radius: 50%;
     border: 2px solid #666666;
     margin-right: 5px;
 }
 
 .header__name {
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 2px;
 }
 
